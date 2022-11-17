@@ -43,7 +43,7 @@ export default function ChatBox() {
                   type="button"
                   onClick={closeHandler}
                 >
-                  X
+                  x
                 </Button>
               </Col>
             </Row>
@@ -52,19 +52,55 @@ export default function ChatBox() {
               <ListGroup.Item>no messages</ListGroup.Item>
             </ListGroup>
             <form onSubmit={submitHandler}>
-              <InputGroup className="col-6"></InputGroup>
-              <FormControl
-                value={messageBody}
-                onChange={(e) => setMessageBody(e.target.value)}
-                type="text"
-                placeholder="type message"
-              ></FormControl>
-              <Button type="submit" variant="primary">
-                Send
-              </Button>
+              <InputGroup className="col-6">
+                <FormControl
+                  value={messageBody}
+                  onChange={(e) => setMessageBody(e.target.value)}
+                  type="text"
+                  placeholder="type message"
+                ></FormControl>
+                <Button type="submit" variant="primary">
+                  Send
+                </Button>
+              </InputGroup>
             </form>
           </Card.Body>
         </Card>
+        // <Card>
+        //   <Card.Body>
+        //     <Row>
+        //       <Col>
+        //         <strong>Support</strong>
+        //       </Col>
+        //       <Col className="text-end">
+        //         <Button
+        //           className="btn-sm btn-secondary"
+        //           type="button"
+        //           onClick={closeHandler}
+        //         >
+        //           x
+        //         </Button>
+        //       </Col>
+        //     </Row>
+        //     <hr />
+        //     <ListGroup>
+        //       <ListGroup.Item>no messages</ListGroup.Item>
+        //     </ListGroup>
+        //     <form onSubmit={submitHandler}>
+        //       <InputGroup className="col-6">
+        //         <FormControl
+        //           value={messageBody}
+        //           onChange={(e) => setMessageBody(e.target.value)}
+        //           type="text"
+        //           placeholder="type message"
+        //         ></FormControl>
+        //         <Button type="submit" variant="primary">
+        //           Send
+        //         </Button>
+        //       </InputGroup>
+        //     </form>
+        //   </Card.Body>
+        // </Card>
       )}
     </div>
   );
