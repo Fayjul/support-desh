@@ -18,3 +18,8 @@ code {
   right: 1rem;
   bottom: 1rem;
 }
+.chatbox .list-group {
+  overflow: scroll;
+  max-height: 68vh;
+  margin-bottom: 1rem;
+}

@@ -18,7 +18,11 @@ export default function ChatBox() {
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(messageBody);
+    if (!messageBody.trim()) {
+      alert('Eror, Please type message');
+    } else {
+      console.log(messageBody);
+    }
   };
   return (
     <div className="chatbox">
@@ -33,7 +37,7 @@ export default function ChatBox() {
               <Col>
                 <strong>Support</strong>
               </Col>
-              <Col>
+              <Col className="text-end">
                 <Button
                   className="btn-sm btn-secondary"
                   type="button"
@@ -55,6 +59,9 @@ export default function ChatBox() {
                 type="text"
                 placeholder="type message"
               ></FormControl>
+              <Button type="submit" variant="primary">
+                Send
+              </Button>
             </form>
           </Card.Body>
         </Card>
