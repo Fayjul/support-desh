@@ -2,5 +2,24 @@
   "dependencies": {
     "bootstrap": "^5.2.2",
     "react-bootstrap": "^2.6.0"
-  }
+  },
+  "name": "support-desh",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node backend/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fayjul/support-desh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fayjul/support-desh/issues"
+  },
+  "homepage": "https://github.com/Fayjul/support-desh#readme"
 }
